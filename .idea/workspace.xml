@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a542b4d7-c7b3-47c5-8e1b-16aec8195a30" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/LocationIndexTester.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-    </list>
+    <list default="true" id="a542b4d7-c7b3-47c5-8e1b-16aec8195a30" name="Default" comment="" />
     <ignored path="LocationIndexTester.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
