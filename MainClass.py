@@ -26,16 +26,17 @@ class EsModules():
         today = datetime.now().strftime('%Y-%m-%d %H-%M-%S')
         #rundate = datetime.now().strftime('%Y-%m-%d %H-%M')
         parsed = json.dumps(result, indent=4, ensure_ascii=False).encode('utf-8')
+
         if environment=='search1node01q.tmpqa.core.dc':
             env_val='QA'
         elif environment=='search1node01s.tmpstage.core.dc':
             env_val='Staging'
-        elif environment=='search1node01p.tmpprod.core.dc':
-            env_val="Prod"
+        elif environment=="search1node01p.tmpprod.core.dc":
+            env_val='Prod'
         #print(parsed)
 
         output_name = search_term+ " "+langcode+" "+today + '.txt'
-        resultsdir='./'+env_val+"/"+langcode+"/"+runtime
+        resultsdir='./Test Results/'+env_val+"/"+runtime+"/"+langcode
         if not os.path.exists(resultsdir):
             os.makedirs(resultsdir)
         with open(os.path.join(resultsdir,output_name), "wb") as out_file:
@@ -60,5 +61,5 @@ class EsModules():
 #
 # es_mod = EsModules()
 # conn = EsConnect()
-# result = es_mod.es_location_suggest()
+# result = es_mod.es_location_suggest();
 
