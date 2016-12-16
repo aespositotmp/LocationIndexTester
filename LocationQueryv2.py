@@ -18,7 +18,7 @@ location_file= config['DEFAULT']['testlib']
 f=open(location_file,'r',encoding='utf-8')
 search_term = f.readlines()
 f.close()
-
+#commit test
 # language code used in location alias
 alias_lan_code = config['DEFAULT']['languagecode']
 
